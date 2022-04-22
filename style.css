@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap');
+
+html{
+    font-family: 'Nunito';
+}
+
+body{
+    background-color: #130f0d;
+    color: white;
+}
+
+.boards{
+    display: flex;
+    margin-top: 32px;
+}
+
+.board{
+    background-color: #141316;
+    border: 1px solid #fd951f11;
+    border-radius: 4px;
+    margin: 0px 16px;
+}
+
+.board h3{
+    padding: 16px;
+    margin: 0;
+    color: #fd951fcc;
+}
+
+.dropzone{
+    padding: 16px;
+    min-width: 282px;
+    min-height: 200px;
+}
+
+.card{
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px #fd951fcc;
+    width: 250px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #1a1a1c;
+}
+
+.status{
+    width: 30px;
+    height: 8px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.status.green{
+    background-color: #26d469;
+}
+
+.status.blue{
+    background-color: #33adff;
+}
+
+.status.red{
+    background-color: red;
+}
+
+.highlight{
+    background-color: #fd951f08;
+}
+
+.over{
+    background-color: #4cb13722;
+}
+
+.card, .dropzone{
+    transition: .4s;
+}
+
+.is-dragging{
+    cursor: move;
+    opacity: 0.3;
+}
